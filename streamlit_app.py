@@ -383,23 +383,15 @@ if page == "Prérequis":
 
     st.divider()
 
-    st.subheader("🔐 Envoi d’emails (principe)")
-
-    st.markdown(
-        """
-Dans l’onglet **Emailing**, vous pourrez saisir :
-
-- l’adresse expéditeur,
-- le mot de passe SMTP / mot de passe d’application,
-- et, dans les **paramètres avancés**, l’hôte / port / SSL (par défaut : Gmail).
-
-Exemple Gmail :
-
-- Hôte : `smtp.gmail.com`
-- Port : `465`
-- SSL : activé
-"""
-    )
+    st.subheader("🔐 Pour l'envoi d’emails")
+    st.markdown("""
+    1) Crée un **mot de passe d’application** (type *Mail* / *Windows*).  
+       👉 https://myaccount.google.com/apppasswords  
+    2) Dans **credentials.xlsx** mets :
+       - `email` = ton adresse Gmail  
+       - `password` = **mot de passe d’application** (16 caractères, **sans espaces**)  
+    3) Relance l’application : l’onglet **Emailing** pourra envoyer les messages.
+    """)
 
 # ==============================================================================
 # Page : Transposition PDP
@@ -871,4 +863,5 @@ elif page == "Emailing":
 
             st.success(
                 f"🎯 Terminé : {ok_count} mail(s) envoyé(s), {err_count} erreur(s)."
+
             )
