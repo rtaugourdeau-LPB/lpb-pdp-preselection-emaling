@@ -387,10 +387,9 @@ if page == "Prérequis":
     st.markdown("""
     1) Crée un **mot de passe d’application** (type *Mail* / *Windows*).  
        👉 https://myaccount.google.com/apppasswords  
-    2) Dans **credentials.xlsx** mets :
+    2) Dans l'onglet **Emailing** une fois le fichier sélectionné entrez :
        - `email` = ton adresse Gmail  
        - `password` = **mot de passe d’application** (16 caractères, **sans espaces**)  
-    3) Relance l’application : l’onglet **Emailing** pourra envoyer les messages.
     """)
 
 # ==============================================================================
@@ -865,3 +864,4 @@ elif page == "Emailing":
                 f"🎯 Terminé : {ok_count} mail(s) envoyé(s), {err_count} erreur(s)."
 
             )
+
