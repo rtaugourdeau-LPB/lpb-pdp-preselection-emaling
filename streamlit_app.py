@@ -288,18 +288,17 @@ def default_subject() -> str:
 def default_body(prenom: str, nom: str) -> str:
     prenom = (prenom or "").strip().title()
     nom = (nom or "").strip().title()
-    return f"""👋 Bonjour {prenom} {nom},
+    return f"""Bonjour {prenom} {nom},
 
-Merci pour l’intérêt que vous portez à La Première Brique et pour la présentation de votre projet.
+Nous vous remercions pour l’intérêt porté à La Première Brique ainsi que pour la présentation de votre projet.
 
-Après étude de votre dossier, nous ne pourrons malheureusement pas donner suite à votre demande de financement 😔.
-Notre plateforme se concentre exclusivement sur des opérations situées en France métropolitaine, et votre projet indique une localisation à l’étranger, ce qui sort de notre périmètre d’intervention.
+Après analyse attentive de votre dossier, nous sommes au regret de vous informer que nous ne serons pas en mesure d’y donner une suite favorable. En effet, notre plateforme intervient exclusivement sur des opérations situées en France métropolitaine. Or, votre projet est localisé à l’étranger, ce qui dépasse notre périmètre d’intervention.
 
-Nous vous souhaitons une pleine réussite dans la concrétisation de ce projet
-et restons à votre disposition pour tout futur dossier conforme à notre zone géographique 🇫🇷.
+Nous vous remercions néanmoins pour la confiance témoignée et vous souhaitons pleine réussite dans la réalisation de ce projet. 
+Nous restons bien entendu à votre disposition pour étudier toute future opération conforme à notre zone géographique.
 
 Bien cordialement,
-L’équipe La Première Brique 🧱
+L’équipe La Première Brique
 """
 
 
@@ -864,4 +863,5 @@ elif page == "Emailing":
                 f"🎯 Terminé : {ok_count} mail(s) envoyé(s), {err_count} erreur(s)."
 
             )
+
 
