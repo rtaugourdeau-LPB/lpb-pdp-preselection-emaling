@@ -21,6 +21,7 @@ from openpyxl.utils import get_column_letter
 # ==============================================================================
 st.set_page_config(
     page_title="Présélection des projets",
+    page_icon="📁",
     layout="centered",
 )
 
@@ -863,5 +864,6 @@ elif page == "Emailing":
                 f"🎯 Terminé : {ok_count} mail(s) envoyé(s), {err_count} erreur(s)."
 
             )
+
 
 
