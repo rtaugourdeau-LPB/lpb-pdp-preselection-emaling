@@ -348,7 +348,7 @@ if "excluded_contacts" not in st.session_state:
 # UI : navigation
 # ==============================================================================
 with st.sidebar:
-    st.header("Rubriques")
+    st.header("Menu")
     page = st.radio(
         "Aller à",
         ["Prérequis", "Transposition PDP", "Emailing"],
@@ -864,6 +864,7 @@ elif page == "Emailing":
                 f"🎯 Terminé : {ok_count} mail(s) envoyé(s), {err_count} erreur(s)."
 
             )
+
 
 
 
