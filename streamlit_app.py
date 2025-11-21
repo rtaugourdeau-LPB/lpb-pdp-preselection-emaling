@@ -401,7 +401,7 @@ elif page == "Transposition PDP":
     st.markdown(
         """
 1. Importez l’export Typeform (Excel).  
-2. L’outil crée 1 fichier Excel **par porteur**, rangé virtuellement par **mois**,  
+2. L’outil crée 1 fichier Excel **par porteur**, rangé par **mois**,  
    et sépare **France** / **Localisation non adaptée**.  
 3. Vous pouvez télécharger un **ZIP** et l’onglet *Emailing* est mis à jour.
 """
@@ -864,6 +864,7 @@ elif page == "Emailing":
                 f"🎯 Terminé : {ok_count} mail(s) envoyé(s), {err_count} erreur(s)."
 
             )
+
 
 
 
