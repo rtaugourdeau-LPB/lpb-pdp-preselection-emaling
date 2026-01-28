@@ -400,18 +400,18 @@ elif page == "Transposition PDP":
 
 st.markdown(
     """
-### 1) Importez l’export Typeform (Excel)
-Données test : [Télécharger le fichier](https://lapremierebriquelpb-my.sharepoint.com/:x:/g/personal/r_taugourdeau_lapremierebrique_fr/IQDJJ1vtSZR5SJw8oTjp0LPVAVrFhT-pLWh9Zk1_Bk_Q69Y?e=L1aRZx)
-
-### 2) Génération des fichiers
-L’outil crée **un fichier Excel par porteur**, rangé par **mois**, et sépare :
-- **France**
-- **Localisation non adaptée**
-
-### 3) Téléchargement
-Vous pouvez télécharger un **ZIP**, et l’onglet *Emailing* est mis à jour.
-"""
-)
+    ### 1) Importez l’export Typeform (Excel)
+    Données test : [Télécharger le fichier](https://lapremierebriquelpb-my.sharepoint.com/:x:/g/personal/r_taugourdeau_lapremierebrique_fr/IQDJJ1vtSZR5SJw8oTjp0LPVAVrFhT-pLWh9Zk1_Bk_Q69Y?e=L1aRZx)
+    
+    ### 2) Génération des fichiers
+    L’outil crée **un fichier Excel par porteur**, rangé par **mois**, et sépare :
+    - **France**
+    - **Localisation non adaptée**
+    
+    ### 3) Téléchargement
+    Vous pouvez télécharger un **ZIP**, et l’onglet *Emailing* est mis à jour.
+    """
+    )
 
 
     uploaded = st.file_uploader(
@@ -871,6 +871,7 @@ elif page == "Emailing":
                 f"🎯 Terminé : {ok_count} mail(s) envoyé(s), {err_count} erreur(s)."
 
             )
+
 
 
 
